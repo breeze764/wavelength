@@ -1,0 +1,59 @@
+<!--html homepage for the wavelength game-->
+<!--by Brianna-->
+<!--10 April 2025-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wavelength 2.1</title>
+</head>
+<body>
+    <div class="jumbotron text-center">
+        <h1>Wavelength 2.1</h1>
+        <p>Welcome to the game!</p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h3>Join a game</h3>
+            <form action="/join" method="post">
+                <div class="form-group">
+                    <label for="roomCode">Enter Room Code:</label>
+                    <input 
+                    type="text" 
+                    style="text-transform:uppercase"
+                    class="form-control" 
+                    id="roomCode" 
+                    name="room_code" 
+                    required>
+                </div>
+                <div class="form-group">
+                  <label for="userName">Enter Username:</label>
+                  <input
+                  type="text"
+                  class="form-control"
+                  id="userName"
+                  name="username"
+                  required>
+                </div>
+                <button type="submit" class="btn btn-primary">Join</button>
+            </form>
+          </div>
+          <div class="col-sm-6 text-center">
+            <h3>Or Host a Game</h3>
+            <form action="/create" method="post">
+                <button type="submit" class="btn btn-success" style="margin-top: 22px;">Create New Game</button>
+              </form>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
