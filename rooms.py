@@ -1,6 +1,4 @@
 #program to contain more logic for the wavelength game
-#by Brianna
-#08 April 2025
 
 import random, string
 

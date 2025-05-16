@@ -1,6 +1,4 @@
-#program to play the wavelength game without snapchat
-#by Brianna 
-#08 April 2025
+#program to play the wavelength game - work in progress
 
 from flask import Flask, render_template, redirect, request, url_for
 from flask_socketio import SocketIO, emit, join_room
